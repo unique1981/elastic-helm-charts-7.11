@@ -6,7 +6,7 @@ metadata:
   labels:
     k8s-app: filebeat
 ---
-apiVersion: authorization.k8s.io
+apiVersion: apiregistration.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: filebeat
@@ -22,7 +22,7 @@ rules:
   - watch
   - list
 ---
-apiVersion: authorization.k8s.io
+apiVersion: apiregistration.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: filebeat
@@ -33,4 +33,4 @@ subjects:
 roleRef:
   kind: ClusterRole
   name: filebeat
-  apiGroup: authorization.k8s.io
+  apiGroup: beat.k8s.elastic.co
