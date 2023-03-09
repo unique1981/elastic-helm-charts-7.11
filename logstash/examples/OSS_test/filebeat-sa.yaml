@@ -29,7 +29,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: filebeat
-  namespace: kube-system
+  namespace: opensearch
 roleRef:
   kind: ClusterRole
   name: filebeat
