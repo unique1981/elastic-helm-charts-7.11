@@ -15,12 +15,6 @@ spec:
     spec:
       containers:
       - name: logstash
-        env:
-          - name: LOGSTASH_PW
-            valueFrom:
-              secretKeyRef:
-                name: elasticsearch-secrets
-                key: LOGSTASH_PASSWORD
         image: docker.elastic.co/logstash/logstash-oss:7.11.2
         ports:
         - containerPort: 5044
