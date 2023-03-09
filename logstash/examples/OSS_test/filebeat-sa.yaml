@@ -6,7 +6,7 @@ metadata:
   labels:
     k8s-app: filebeat
 ---
-apiVersion: rbac.authorization.k8s.io
+apiVersion: authorization.k8s.io
 kind: ClusterRole
 metadata:
   name: filebeat
