@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: filebeat
-  namespace: kube-system
+  namespace: opensearch
 spec:
   updateStrategy:
     type: RollingUpdate
