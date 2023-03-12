@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: logstash
-        image: docker.elastic.co/logstash/logstash-oss:8.6.2
+        image: docker.elastic.co/logstash/logstash-oss:7.11.2
         command:
           - sh
           - -c
