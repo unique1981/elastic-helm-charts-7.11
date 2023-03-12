@@ -30,11 +30,11 @@ spec:
             mountPath: /usr/share/logstash/pipeline
         resources:
             limits:
-              memory: "2Gi"
-              cpu: "1000m"
+              memory: "4Gi"
+              cpu: "2500m"
             requests: 
               memory: "2Gi"
-              cpu: "400m"  
+              cpu: "1000m"  
       volumes:
       - name: config-volume
         configMap:
