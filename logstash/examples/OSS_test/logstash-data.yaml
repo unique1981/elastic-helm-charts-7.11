@@ -53,7 +53,7 @@ data:
       
     }
     output {
-     elasticsearch {
+     opensearch {
         hosts => ["secops-cluster:9200"]
         user => 'admin'
         password => 'admin'
