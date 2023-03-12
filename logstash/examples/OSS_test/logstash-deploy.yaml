@@ -20,7 +20,7 @@ spec:
           - sh
           - -c
           - |
-            /usr/share/logstash/bin/logstash-plugin install opensearch --no-verify
+            /usr/share/logstash/bin/logstash-plugin install --preserve logstash-input-opensearch
         ports:
         - containerPort: 5044
         volumeMounts:
