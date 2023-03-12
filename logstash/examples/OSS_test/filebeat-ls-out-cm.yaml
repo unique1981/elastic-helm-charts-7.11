@@ -18,7 +18,7 @@ data:
         # Reload module configs as they change:
         reload.enabled: false
      output.elasticsearch:
-        hosts: ["https://secops-cluster:9200"]
+        hosts: ["secops-cluster:9200"]
         username: "admin"
         password: "admin"
         index => "logstash-beta-%{+YYYY.MM.dd}"
