@@ -30,14 +30,11 @@ spec:
             requests: 
               memory: "2Gi"
               cpu: "400m"
-         command:
-            - /usr/bin/env
-            - bash
+        command:
+            - sh
             - -c
             - |
-              #!/usr/bin/env bash
-              set -e
-              bin/logstash-plugin install logstash-output-opensearch
+              bin/elasticsearch-plugin install logstash-output-opensearch            
       volumes:
       - name: config-volume
         configMap:
