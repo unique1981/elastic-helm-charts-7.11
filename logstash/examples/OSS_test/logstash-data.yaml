@@ -53,7 +53,7 @@ data:
       
     }
     output {
-     opensearch {
+     elasticsearch {
         hosts => ["https://secops-cluster:9200"]
         auth_type => {
             type => 'basic'
