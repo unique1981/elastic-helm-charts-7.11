@@ -54,8 +54,7 @@ data:
     }
     output {
      elasticsearch {
-        hosts => ["https://secops-cluster:9200"]
-        type => 'basic'
+        hosts => ["secops-cluster:9200"]
         user => 'admin'
         password => 'admin'
         index => "logstash-beta-%{+YYYY.MM.dd}"
