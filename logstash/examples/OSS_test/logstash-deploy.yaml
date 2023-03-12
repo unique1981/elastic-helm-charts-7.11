@@ -20,7 +20,7 @@ spec:
           - sh
           - -c
           - |
-            bin/elasticsearch-plugin install --batch opensearch
+            bin/logstash-plugin install --batch opensearch
         ports:
         - containerPort: 5044
         volumeMounts:
