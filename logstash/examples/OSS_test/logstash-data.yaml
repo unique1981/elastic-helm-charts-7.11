@@ -53,14 +53,12 @@ data:
       
     }
     output {
-      elasticsearch {
-        ilm_enabled => false
+     opensearch {
         hosts => ["https://secops-cluster:9200"]
-        user => 'admin'
-        password => 'admin'
         index => "logstash-beta-%{+YYYY.MM.dd}"
-        ssl=true
+        user => "admin"
+        password => "admin"
+        ssl => true
         ssl_certificate_verification => false
-        cacert => "/usr/share/logstash/certs/ca.crt"
       }
     }    
