@@ -55,10 +55,12 @@ data:
     output {
      opensearch {
         hosts => ["https://secops-cluster:9200"]
+        auth_type => {
+            type => 'basic'
+            user => 'admin'
+            password => 'admin'
+        }
         index => "logstash-beta-%{+YYYY.MM.dd}"
-        user => "admin"
-        password => "admin"
-        ssl => true
-        ssl_certificate_verification => false
+        action => "create"
       }
     }    
