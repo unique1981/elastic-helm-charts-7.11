@@ -15,8 +15,10 @@ daemonset:
                 logs_path: "/var/log/containers/"
       output.elasticsearch:
         host: '${NODE_NAME}'
-        hosts: "elasticsearch-master:9200"
-        index: "filebeat-oss-%{[agent.version]}-%{+yyyy.MM.dd}"
+        hosts: "secops-cluster:9200"
+        index: "logstash-beta--%{+yyyy.MM.dd}"
+        username: "admin"
+        password: "admin"
       setup.ilm.enabled: false
       setup.template.name: "filebeat"
       setup.template.pattern: "filebeat-oss-*"
