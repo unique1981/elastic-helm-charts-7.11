@@ -59,5 +59,7 @@ data:
         password => 'admin'
         index => "logstash-beta-%{+YYYY.MM.dd}"
         action => "create"
+        ssl => true
+        ssl_certificate_verification => false
       }
     }    
