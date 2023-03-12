@@ -59,5 +59,6 @@ data:
         user => 'admin'
         password => 'admin'
         index => "logstash-beta-%{+YYYY.MM.dd}"
+        ssl=false
       }
     }    
