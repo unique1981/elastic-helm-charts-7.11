@@ -30,11 +30,6 @@ spec:
             requests: 
               memory: "2Gi"
               cpu: "400m"
-        command:
-            - sh
-            - -c
-            - |
-              bin/logstash-plugin install logstash-output-opensearch            
       volumes:
       - name: config-volume
         configMap:
