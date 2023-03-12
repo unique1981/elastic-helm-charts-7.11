@@ -34,7 +34,7 @@ spec:
             - sh
             - -c
             - |
-              /usr/share/logstash/bin/elasticsearch-plugin install logstash-output-opensearch            
+              bin/logstash-plugin install logstash-output-opensearch            
       volumes:
       - name: config-volume
         configMap:
